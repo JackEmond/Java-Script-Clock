@@ -1,0 +1,40 @@
+html, body{
+    height: 100%;
+}
+
+.width{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.clock{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    background: url(images/clock_facesmall.png);
+}
+
+.clock:after {
+    content: '';
+    background: #000;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+}
+
+.hands{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
